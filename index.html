@@ -4,208 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Unbrew - Boost Personal Productivity</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #7c3aed, #6d28d9);
-            color: white;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            padding: 20px 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            min-height: calc(100vh - 80px);
-            gap: 50px;
-        }
-
-        .hero-content {
-            flex: 1;
-        }
-
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-title {
-            font-size: 56px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero-text {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .btn-primary {
-            background: #00b4d8;
-            color: white;
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
-        }
-
-        .social-links a:hover {
-            opacity: 1;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                padding: 40px 0;
-            }
-
-            .hero-title {
-                font-size: 40px;
-            }
-
-            .hero-image img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .cta-buttons {
-                justify-content: center;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-
-            .nav-links {
-                display: none;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 32px;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div class="">
-        <div class="container">
+        <div class="container h-screen">
             <header>
                 <nav>
-                    <div class="logo">Unbrew.</div>
+                    <div class="logo">EduWeb Solutions</div>
                     <div class="nav-links">
-                        <a href="#home">HOME</a>
-                        <a href="#about">ABOUT US</a>
-                        <a href="#services">SERVICES</a>
-                        <a href="#pricing">PRICING</a>
-                        <a href="#work">WORK</a>
-                        <a href="#blog">BLOG</a>
-                        <a href="#contact">CONTACT US</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#work">Work</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </nav>
             </header>
 
             <section class="hero">
                 <div class="hero-content">
-                    <h1 class="hero-title">Boost Personal Productivity</h1>
-                    <p class="hero-text">A small river named Duden flows by their place and supplies it with the
+                    <h1 class="hero-title largest-font font-semibold">Boost Personal Productivity</h1>
+                    <p class="hero-text smallest-font font-light">A small river named Duden flows by their place and
+                        supplies it with
+                        the
                         necessary regelialia.</p>
                     <div class="cta-buttons">
-                        <a href="#start" class="btn btn-primary">Start A Project</a>
-                        <a href="tel:+012345678910" class="btn btn-secondary">Call us for any inquiry +01 2345 6789
-                            910</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#twitter">Twitter</a>
-                        <a href="#facebook">Facebook</a>
-                        <a href="#instagram">Instagram</a>
-                        <a href="#google">Google+</a>
+                        <a href="#start" class="btn btn-primary smaller-font">Start A Project</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -215,16 +44,14 @@
             </section>
         </div>
 
-        <!-- Services Section -->
         <section class="services">
             <div class="container">
                 <div class="services-header">
-                    <span class="subtitle">OUR SERVICES</span>
-                    <h2>We Provide A Lot of Cool Services</h2>
+                    <span class="subtitle medium-font">OUR SERVICES</span>
+                    <h2 class="font-extralight largest-font">We Provide A Lot of Cool Services</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
                         a large language ocean.</p>
-                    <a href="#services" class="btn btn-primary">Our Services</a>
                 </div>
 
                 <div class="services-grid">
@@ -300,229 +127,32 @@
             </div>
         </section>
 
-        <style>
-            /* Services Section Styles */
-            .services {
-                padding: 100px 0;
-                background: white;
-                color: #333;
-            }
-
-            .services-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .subtitle {
-                color: #00b4d8;
-                font-weight: 600;
-                margin-bottom: 20px;
-                display: block;
-            }
-
-            .services-header h2 {
-                font-size: 40px;
-                color: #1e293b;
-                margin-bottom: 20px;
-            }
-
-            .services-header p {
-                color: #64748b;
-                margin-bottom: 30px;
-            }
-
-            .services-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
-                margin-bottom: 80px;
-            }
-
-            .service-card {
-                background: #f8fafc;
-                padding: 40px 30px;
-                border-radius: 10px;
-                text-align: center;
-                transition: transform 0.3s ease;
-            }
-
-            .service-card:hover {
-                transform: translateY(-5px);
-            }
-
-            .service-card .icon {
-                width: 70px;
-                height: 70px;
-                margin: 0 auto 20px;
-            }
-
-            .service-card .icon img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-
-            .service-card h3 {
-                color: #1e293b;
-                margin-bottom: 15px;
-            }
-
-            .service-card p {
-                color: #64748b;
-            }
-
-            /* Stats Section Styles */
-            .stats-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 30px;
-                margin-top: 80px;
-            }
-
-            .stat-item {
-                text-align: center;
-            }
-
-            .stat-item h3 {
-                font-size: 48px;
-                color: #00b4d8;
-                margin-bottom: 10px;
-            }
-
-            .stat-item p {
-                color: #64748b;
-                font-weight: 600;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 968px) {
-                .services-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-
-            @media (max-width: 768px) {
-                .stats-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-
-            @media (max-width: 480px) {
-                .services-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .services-header h2 {
-                    font-size: 32px;
-                }
-
-                .stats-grid {
-                    grid-template-columns: 1fr;
-                    gap: 40px;
-                }
-            }
-        </style>
-
-        <!-- About Us Section -->
-        <div class="">
-            <section class="about">
-                <div class="container">
-                    <div class="about-grid">
-                        <div class="about-image">
-                            <img src="https://preview.colorlib.com/theme/unbrew/images/about.jpg" alt="About Us Image">
-                        </div>
-                        <div class="about-content">
-                            <span class="subtitle">ABOUT US</span>
-                            <h2>Unbrew A Digital Agency Company</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                                the Semantics, a large language ocean.</p>
-                            <p class="mt-20">A small river named Duden flows by their place and supplies it with the
-                                necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                fly into your mouth.</p>
-                            <a href="#about" class="btn btn-primary mt-30">More About us</a>
-                        </div>
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://preview.colorlib.com/theme/unbrew/images/about.jpg" alt="About Us Image">
+                    </div>
+                    <div class="about-content">
+                        <span class="subtitle medium-font">ABOUT US</span>
+                        <h2 class="font-extralight largest-font">Unbrew A Digital Agency Company</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                            the Semantics, a large language ocean.</p>
+                        <p class="mt-20">A small river named Duden flows by their place and supplies it with the
+                            necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
+                            fly into your mouth.</p>
+                        <a href="#about" class="btn btn-primary mt-30">More About us</a>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <style>
-            /* About Section Styles */
-            .about {
-                padding: 100px 0;
-                background: #f8fafc;
-            }
-
-            .about-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 50px;
-                align-items: center;
-            }
-
-            .about-image img {
-                width: 100%;
-                border-radius: 10px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            }
-
-            .about-content {
-                padding-right: 50px;
-            }
-
-            .about-content h2 {
-                font-size: 40px;
-                color: #1e293b;
-                margin-bottom: 20px;
-                line-height: 1.2;
-            }
-
-            .about-content p {
-                color: #64748b;
-                line-height: 1.6;
-            }
-
-            .mt-20 {
-                margin-top: 20px;
-            }
-
-            .mt-30 {
-                margin-top: 30px;
-                display: inline-block;
-            }
-
-            /* Responsive Styles for About Section */
-            @media (max-width: 968px) {
-                .about-grid {
-                    grid-template-columns: 1fr;
-                    gap: 40px;
-                }
-
-                .about-content {
-                    padding-right: 0;
-                    text-align: center;
-                }
-
-                .about-image {
-                    order: -1;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .about-content h2 {
-                    font-size: 32px;
-                }
-            }
-        </style>
-
-        <!-- Team Section -->
         <section class="team">
             <div class="container">
                 <div class="team-header">
-                    <span class="subtitle">TEAM</span>
-                    <h2>Our Digital Experts Team</h2>
+                    <span class="subtitle medium-font">TEAM</span>
+                    <h2 class="font-extralight largest-font">Our Digital Experts Team</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove.</p>
                 </div>
@@ -571,96 +201,10 @@
             </div>
         </section>
 
-        <style>
-            /* Team Section Styles */
-            .team {
-                padding: 100px 0;
-                background: white;
-            }
-
-            .team-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .team-header h2 {
-                font-size: 40px;
-                color: #1e293b;
-                margin-bottom: 20px;
-            }
-
-            .team-header p {
-                color: #64748b;
-                line-height: 1.6;
-            }
-
-            .team-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 30px;
-            }
-
-            .team-member {
-                text-align: center;
-                transition: transform 0.3s ease;
-            }
-
-            .team-member:hover {
-                transform: translateY(-10px);
-            }
-
-            .member-image {
-                margin-bottom: 20px;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-
-            .member-image img {
-                width: 100%;
-                height: auto;
-                transition: transform 0.3s ease;
-            }
-
-            .team-member:hover .member-image img {
-                transform: scale(1.1);
-            }
-
-            .member-info h3 {
-                color: #1e293b;
-                font-size: 20px;
-                margin-bottom: 5px;
-            }
-
-            .member-info p {
-                color: #64748b;
-                font-size: 14px;
-            }
-
-            /* Responsive Styles for Team Section */
-            @media (max-width: 968px) {
-                .team-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 40px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .team-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .team-header h2 {
-                    font-size: 32px;
-                }
-            }
-        </style>
-
-        <!-- Testimonials Section -->
         <section class="testimonials">
             <div class="container">
                 <div class="testimonials-header">
-                    <span class="subtitle">TESTIMONIAL</span>
+                    <span class="subtitle medium-font">TESTIMONIAL</span>
                     <h2>Happy Customers</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove.</p>
@@ -735,115 +279,9 @@
             </div>
         </section>
 
-        <style>
-            /* Testimonials Section Styles */
-            .testimonials {
-                padding: 100px 0;
-                background: #f8fafc;
-            }
 
-            .testimonials-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .testimonials-header h2 p {
-                color: #1e293b;
-            }
-
-            .testimonial-carousel {
-                position: relative;
-                max-width: 1000px;
-                margin: 0 auto;
-                overflow: hidden;
-            }
-
-            .testimonial-track {
-                display: flex;
-                transition: transform 0.5s ease;
-                gap: 30px;
-            }
-
-            .testimonial-card {
-                min-width: calc(33.333% - 20px);
-                background: white;
-                padding: 40px 30px;
-                border-radius: 10px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            }
-
-            .quote-icon {
-                margin-bottom: 20px;
-            }
-
-            .testimonial-text {
-                color: #64748b;
-                line-height: 1.6;
-                margin-bottom: 30px;
-            }
-
-            .testimonial-author {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .testimonial-author img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-
-            .author-info h4 {
-                color: #1e293b;
-                margin-bottom: 5px;
-            }
-
-            .author-info p {
-                color: #00b4d8;
-                font-size: 14px;
-            }
-
-            .carousel-dots {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-                margin-top: 40px;
-            }
-
-            .dot {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                border: none;
-                background: #cbd5e1;
-                cursor: pointer;
-                padding: 0;
-                transition: background-color 0.3s ease;
-            }
-
-            .dot.active {
-                background: #00b4d8;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 968px) {
-                .testimonial-card {
-                    min-width: calc(50% - 15px);
-                }
-            }
-
-            @media (max-width: 768px) {
-                .testimonial-card {
-                    min-width: 100%;
-                }
-            }
-        </style>
 
         <script>
-            // Testimonial Carousel functionality
             const track = document.querySelector('.testimonial-track');
             const dots = document.querySelectorAll('.dot');
             let currentSlide = 0;
@@ -852,13 +290,11 @@
                 const slideWidth = document.querySelector('.testimonial-card').offsetWidth + 30; // Include gap
                 track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
-                // Update dots
                 dots.forEach((dot, index) => {
                     dot.classList.toggle('active', index === currentSlide);
                 });
             }
 
-            // Add click handlers to dots
             dots.forEach((dot, index) => {
                 dot.addEventListener('click', () => {
                     currentSlide = index;
@@ -866,25 +302,21 @@
                 });
             });
 
-            // Auto-advance carousel
             setInterval(() => {
                 currentSlide = (currentSlide + 1) % dots.length;
                 updateCarousel();
             }, 5000);
 
-            // Initial setup
             updateCarousel();
 
-            // Update on window resize
             window.addEventListener('resize', updateCarousel);
         </script>
 
-        <!-- Why Choose Us Section -->
         <section class="why-choose-us">
             <div class="container">
                 <div class="why-choose-header">
-                    <span class="subtitle">WHY CHOOSE US</span>
-                    <h2>Easy Management for Your Businesses</h2>
+                    <span class="subtitle medium-font">WHY CHOOSE US</span>
+                    <h2 class="font-extralight largest-font">Easy Management for Your Businesses</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove.</p>
                 </div>
@@ -938,118 +370,11 @@
             </div>
         </section>
 
-        <style>
-            /* Why Choose Us Section Styles */
-            .why-choose-us {
-                padding: 100px 0;
-                background: linear-gradient(135deg, #7c3aed, #6d28d9);
-                color: white;
-            }
-
-            .why-choose-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .why-choose-header h2 {
-                font-size: 40px;
-                margin-bottom: 20px;
-                color: white;
-            }
-
-            .why-choose-header p {
-                opacity: 0.9;
-                line-height: 1.6;
-            }
-
-            .features-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 30px;
-                margin-bottom: 60px;
-            }
-
-            .feature-card {
-                background: rgba(255, 255, 255, 0.1);
-                padding: 40px 30px;
-                border-radius: 10px;
-                text-align: center;
-                transition: transform 0.3s ease;
-            }
-
-            .feature-card:hover {
-                transform: translateY(-10px);
-                background: rgba(255, 255, 255, 0.15);
-            }
-
-            .feature-icon {
-                width: 70px;
-                height: 70px;
-                margin: 0 auto 20px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .feature-icon img {
-                width: 35px;
-                height: 35px;
-                filter: brightness(0) invert(1);
-            }
-
-            .feature-card h3 {
-                font-size: 20px;
-                margin-bottom: 15px;
-                color: white;
-            }
-
-            .feature-card p {
-                color: rgba(255, 255, 255, 0.8);
-                font-size: 14px;
-                line-height: 1.6;
-            }
-
-            .bottom-text {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto;
-                color: rgba(255, 255, 255, 0.9);
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 1024px) {
-                .features-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 20px;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .why-choose-header h2 {
-                    font-size: 32px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .features-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .feature-card {
-                    padding: 30px 20px;
-                }
-            }
-        </style>
-
-        <!-- Portfolio Section -->
         <section class="portfolio">
             <div class="container">
                 <div class="portfolio-header">
-                    <span class="subtitle">OUR PORTFOLIO</span>
-                    <h2>Our Awesome Work</h2>
+                    <span class="subtitle medium-font">OUR PORTFOLIO</span>
+                    <h2 class="largest-font font-extralight">Our Awesome Work</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove.</p>
                 </div>
@@ -1106,118 +431,11 @@
             </div>
         </section>
 
-        <style>
-            /* Portfolio Section Styles */
-            .portfolio {
-                padding: 100px 0;
-                background: white;
-            }
-
-            .portfolio-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .portfolio-header h2 {
-                font-size: 40px;
-                color: #1e293b;
-                margin-bottom: 20px;
-            }
-
-            .portfolio-header p {
-                color: #64748b;
-                line-height: 1.6;
-            }
-
-            .portfolio-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-
-            .portfolio-item {
-                position: relative;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-
-            .portfolio-image {
-                position: relative;
-                aspect-ratio: 16/9;
-                overflow: hidden;
-            }
-
-            .portfolio-image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.5s ease;
-            }
-
-            .portfolio-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(124, 58, 237, 0.9);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-
-            .portfolio-item:hover .portfolio-overlay {
-                opacity: 1;
-            }
-
-            .portfolio-item:hover .portfolio-image img {
-                transform: scale(1.1);
-            }
-
-            .overlay-content {
-                text-align: center;
-                color: white;
-                padding: 20px;
-            }
-
-            .overlay-content .category {
-                font-size: 14px;
-                opacity: 0.9;
-                margin-bottom: 10px;
-                display: block;
-            }
-
-            .overlay-content h3 {
-                font-size: 24px;
-                margin: 0;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 768px) {
-                .portfolio-grid {
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                }
-
-                .portfolio-header h2 {
-                    font-size: 32px;
-                }
-
-                .overlay-content h3 {
-                    font-size: 20px;
-                }
-            }
-        </style>
-
-        <!-- Pricing Section -->
         <section class="pricing">
             <div class="container">
                 <div class="pricing-header">
-                    <span class="subtitle">PRICING</span>
-                    <h2>Choose Your Pricing Plan</h2>
+                    <span class="subtitle medium-font">PRICING</span>
+                    <h2 class="largest-font font-extralight">Choose Your Pricing Plan</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts. Separated they live in Bookmarksgrove.</p>
                 </div>
@@ -1390,120 +608,9 @@
             </div>
         </section>
 
-        <style>
-            /* Pricing Section Styles */
-            .pricing {
-                padding: 100px 0;
-                background: #f8fafc;
-            }
-
-            .pricing-header {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto 60px;
-            }
-
-            .pricing-header h2 {
-                font-size: 40px;
-                color: #1e293b;
-                margin-bottom: 20px;
-            }
-
-            .pricing-header p {
-                color: #64748b;
-                line-height: 1.6;
-            }
-
-            .pricing-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 30px;
-            }
-
-            .pricing-card {
-                background: white;
-                padding: 40px 30px;
-                border-radius: 10px;
-                text-align: center;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-                transition: transform 0.3s ease;
-            }
-
-            .pricing-card:hover {
-                transform: translateY(-10px);
-            }
-
-            .price {
-                margin-bottom: 20px;
-            }
-
-            .currency {
-                font-size: 24px;
-                color: #00b4d8;
-                vertical-align: top;
-            }
-
-            .amount {
-                font-size: 48px;
-                font-weight: bold;
-                color: #00b4d8;
-            }
-
-            .pricing-card h3 {
-                color: #1e293b;
-                margin-bottom: 30px;
-                font-size: 18px;
-            }
-
-            .features-list {
-                list-style: none;
-                padding: 0;
-                margin-bottom: 30px;
-            }
-
-            .features-list li {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: #64748b;
-                margin-bottom: 15px;
-                font-size: 14px;
-            }
-
-            .features-list svg {
-                flex-shrink: 0;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 1200px) {
-                .pricing-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 20px;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .pricing-header h2 {
-                    font-size: 32px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .pricing-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .pricing-card {
-                    padding: 30px 20px;
-                }
-            }
-        </style>
-
-        <!-- Footer Section -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-grid">
-                    <!-- Company Info -->
                     <div class="footer-col">
                         <h3>Unbrew.</h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
@@ -1603,160 +710,6 @@
                 </div>
             </div>
         </footer>
-
-        <style>
-            /* Footer Styles */
-            .footer {
-                background: #f8fafc;
-                padding: 80px 0 30px;
-                color: #64748b;
-            }
-
-            .footer-grid {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 40px;
-                margin-bottom: 50px;
-            }
-
-            .footer-col h3 {
-                color: #1e293b;
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-
-            .footer-col h4 {
-                color: #1e293b;
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
-
-            .footer-col p {
-                line-height: 1.6;
-                margin-bottom: 20px;
-            }
-
-            .footer-col ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            .footer-col ul li {
-                margin-bottom: 12px;
-            }
-
-            .footer-col ul li a {
-                color: #64748b;
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
-
-            .footer-col ul li a:hover {
-                color: #00b4d8;
-            }
-
-            .social-links {
-                display: flex;
-                gap: 15px;
-            }
-
-            .social-link {
-                width: 40px;
-                height: 40px;
-                background: #e2e8f0;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #64748b;
-                text-decoration: none;
-                transition: all 0.3s ease;
-            }
-
-            .social-link:hover {
-                background: #00b4d8;
-                color: white;
-            }
-
-            .recent-posts .post {
-                display: flex;
-                gap: 15px;
-                margin-bottom: 20px;
-            }
-
-            .recent-posts img {
-                width: 80px;
-                height: 80px;
-                object-fit: cover;
-                border-radius: 5px;
-            }
-
-            .post-info {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .post-info .date,
-            .post-info .author {
-                font-size: 12px;
-                color: #94a3b8;
-            }
-
-            .post-info h5 {
-                color: #1e293b;
-                margin: 5px 0;
-                font-size: 14px;
-            }
-
-            .contact-info li {
-                display: flex;
-                gap: 15px;
-                align-items: flex-start;
-                margin-bottom: 20px;
-            }
-
-            .contact-info i {
-                color: #00b4d8;
-                margin-top: 5px;
-            }
-
-            .footer-bottom {
-                text-align: center;
-                padding-top: 30px;
-                border-top: 1px solid #e2e8f0;
-            }
-
-            .footer-bottom .heart {
-                color: #ef4444;
-            }
-
-            .footer-bottom a {
-                color: #00b4d8;
-                text-decoration: none;
-            }
-
-            /* Responsive Styles */
-            @media (max-width: 1200px) {
-                .footer-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                }
-            }
-
-            @media (max-width: 768px) {
-                .footer-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-
-            @media (max-width: 480px) {
-                .footer-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-        </style>
-
-        <!-- Font Awesome for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </div>
 </body>
 
