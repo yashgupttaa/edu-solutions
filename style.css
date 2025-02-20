@@ -461,8 +461,17 @@ nav {
 
 .why-choose-header {
     text-align: center;
-    max-width: 700px;
     margin: 0 auto 60px;
+}
+
+.input-touch{
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 8px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
+    color: #64748b;
 }
 
 .why-choose-header h2 {
@@ -654,8 +663,8 @@ nav {
 
 .pricing-header {
     text-align: center;
-    max-width: 700px;
     margin: 0 auto 60px;
+    max-width: 700px;
 }
 
 .pricing-header h2 {
@@ -673,6 +682,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .pricing-card {
@@ -718,11 +728,11 @@ nav {
 
 .features-list li {
     display: flex;
-    align-items: center;
     gap: 10px;
     color: #64748b;
     margin-bottom: 15px;
     font-size: 14px;
+    text-align: start;
 }
 
 .features-list svg {
@@ -731,7 +741,7 @@ nav {
 
 .footer {
     background: #f8fafc;
-    padding: 80px 0 30px;
+    padding: 30px 0;
     color: #64748b;
 }
 
@@ -880,6 +890,81 @@ nav {
 .ugc-div img {
     height: 150px !important;
     cursor: pointer;
+}
+
+
+.contact-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: start;
+    font-weight: 500;
+    color: #64748b;
+    font-size: 14px;
+}
+
+select{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form{
+    background-color: #FFFFFF;
+    padding: 24px 40px;
+    margin-top: 24px;
+}
+
+.question-div{
+    border-bottom: 1px solid lightgray;
+    padding: 12px 0;
+    margin-bottom: 12px;
+}
+
+.have-question{
+    padding: 0 40px;
 }
 
 @media (max-width: 1200px) {
