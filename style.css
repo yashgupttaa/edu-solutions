@@ -1076,7 +1076,7 @@ button:hover {
     }
 
     .cta-buttons {
-        justify-content: center;
+        justify-content: start;
     }
 
     .social-links {
