@@ -464,7 +464,7 @@ nav {
     margin: 0 auto 60px;
 }
 
-.input-touch{
+.input-touch {
     width: 100%;
     padding: 8px 0;
     margin-top: 8px;
@@ -731,7 +731,7 @@ nav {
     gap: 10px;
     color: #64748b;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: start;
 }
 
@@ -742,6 +742,7 @@ nav {
 .footer {
     background: #f8fafc;
     padding: 30px 0;
+    padding-top: 0;
     color: #64748b;
 }
 
@@ -902,10 +903,6 @@ nav {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-align: center;
-    color: #333;
-}
 
 .form-group {
     margin-bottom: 15px;
@@ -921,7 +918,7 @@ label {
     font-size: 14px;
 }
 
-select{
+select {
     width: 100%;
 }
 
@@ -930,9 +927,11 @@ textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    color: #64748b;
 }
 
-.checkbox-group, .radio-group {
+.checkbox-group,
+.radio-group {
     display: flex;
     flex-direction: column;
 }
@@ -951,20 +950,28 @@ button:hover {
     background-color: #0056b3;
 }
 
-.contact-form{
+.contact-form {
     background-color: #FFFFFF;
     padding: 24px 40px;
     margin-top: 24px;
 }
 
-.question-div{
+.question-div {
     border-bottom: 1px solid lightgray;
     padding: 12px 0;
     margin-bottom: 12px;
 }
 
-.have-question{
+.have-question {
     padding: 0 40px;
+}
+
+#toast-container>.toast .toast-close-button {
+    display: none;
+}
+
+#toast-container>.toast::before {
+    display: none !important;
 }
 
 @media (max-width: 1200px) {
@@ -1019,6 +1026,10 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .have-question {
+        padding: 14px 0 0;
+    }
+
     .pricing-header h2 {
         font-size: 32px;
     }
@@ -1046,7 +1057,7 @@ button:hover {
 
     .hero {
         flex-direction: column;
-        text-align: center;
+        text-align: start;
         padding: 40px 0;
     }
 
