@@ -994,6 +994,15 @@ button:hover {
 }
 
 @media (max-width: 968px) {
+
+    #team-member-1 {
+        display: none;
+    }
+
+    #team-member-2 {
+        display: none;
+    }
+
     .testimonial-card {
         min-width: calc(50% - 15px);
     }
@@ -1004,7 +1013,15 @@ button:hover {
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-grid {
