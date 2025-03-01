@@ -975,6 +975,10 @@ button:hover {
     display: none !important;
 }
 
+.carousel-dots {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -994,6 +998,10 @@ button:hover {
 }
 
 @media (max-width: 968px) {
+
+    .carousel-dots {
+        display: flex;
+    }
 
     #team-member-1 {
         display: none;
@@ -1043,6 +1051,8 @@ button:hover {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 
     .have-question {
         padding: 14px 0 0;
